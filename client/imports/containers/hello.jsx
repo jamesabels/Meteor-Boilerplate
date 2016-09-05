@@ -21,7 +21,6 @@ class Hello extends TrackerReact(React.Component) {
             <h1>{this.props.message}</h1>
         );
     }
-
 }
 
 function mapStateToProps(state) {
