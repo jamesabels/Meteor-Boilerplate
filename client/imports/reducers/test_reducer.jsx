@@ -1,11 +1,11 @@
-import { CONTENT_MESSAGE } from '../utils/constants.jsx';
-import { SIDEBAR_MESSAGE } from '../utils/constants.jsx';
+import {CONTENT_MESSAGE} from '../utils/constants.jsx';
+import {SIDEBAR_MESSAGE} from '../utils/constants.jsx';
 
 
 initState = {};
 
 // Counter Reducer
-export default testReducer = function(state = initState, action) {
+export default testReducer = function (state = initState, action) {
     switch (action.type) {
         case CONTENT_MESSAGE:
             return Object.assign({}, state, {

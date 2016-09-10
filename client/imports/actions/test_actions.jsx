@@ -1,5 +1,5 @@
-import { CONTENT_MESSAGE } from '../utils/constants.jsx';
-import { SIDEBAR_MESSAGE} from '../utils/constants.jsx';
+import {CONTENT_MESSAGE} from '../utils/constants.jsx';
+import {SIDEBAR_MESSAGE} from '../utils/constants.jsx';
 
 export default TestActions = {};
 
