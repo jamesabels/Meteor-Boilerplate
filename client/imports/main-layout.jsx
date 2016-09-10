@@ -1,26 +1,17 @@
 import React from 'react';
-
-// Import react redux 
-import { createStore, applyMiddleware } from 'redux';
-
-// Import React Redux
-import  { Provider } from 'react-redux';
-
-// Import Reducer 
-import rootReducer from './reducers/root_reducer.jsx';
-
-// Import  Middleware
-import thunk from 'redux-thunk';
-
-const createStoreWithMiddleware = applyMiddleware(thunk)(createStore);
+import  {Provider} from 'react-redux';
 
 
-export default MainLayout = ({content, store}) => (
-  <Provider store={store}>
-    <div>
-        <div className="container">
-          {content}
+
+export default MainLayout = ({sidebar, content, store}) => (
+    <Provider store={store}>
+        <div>
+            <div className="sidebar">
+                {sidebar}
+            </div>
+            <div className="content">
+                {content}
+            </div>
         </div>
-    </div>
-  </Provider>
+    </Provider>
 );
