@@ -1,13 +1,19 @@
-import { MESSAGE } from '../utils/constants.jsx';
+import { CONTENT_MESSAGE } from '../utils/constants.jsx';
+import { SIDEBAR_MESSAGE } from '../utils/constants.jsx';
+
 
 initState = {};
 
 // Counter Reducer
 export default testReducer = function(state = initState, action) {
     switch (action.type) {
-        case MESSAGE:
+        case CONTENT_MESSAGE:
             return Object.assign({}, state, {
-                message: action.payload
+                content_message: action.payload
+            });
+        case SIDEBAR_MESSAGE:
+            return Object.assign({}, state, {
+                sidebar_message: action.payload
             });
         default:
             return state;

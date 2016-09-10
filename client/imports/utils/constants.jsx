@@ -1,1 +1,2 @@
-export const MESSAGE = 'MESSAGE';
+export const CONTENT_MESSAGE = 'CONTENT_MESSAGE';
+export const SIDEBAR_MESSAGE = 'SIDEBAR_MESSAGE';
