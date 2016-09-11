@@ -1,1 +1,4 @@
-export const MESSAGE = 'MESSAGE';
+export const CONTENT_MESSAGE = 'CONTENT_MESSAGE';
+export const SIDEBAR_MESSAGE = 'SIDEBAR_MESSAGE';
+export const NAV_MESSAGE = 'NAV_MESSAGE';
+export const FOOTER_MESSAGE = 'FOOTER_MESSAGE';

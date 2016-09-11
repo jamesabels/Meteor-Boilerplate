@@ -1,0 +1,47 @@
+html {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow: hidden;
+}
+
+.page-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-wrap {
+  height: 8vh;
+  background-color: teal;
+  flex: 1;
+}
+
+.content-wrap {
+  height: 84vh;
+  background-color: pink;
+  display: flex;
+  flex-direction: row;
+}
+
+.sidebar-wrap {
+  background-color: red;
+  flex: 2.5;
+}
+
+.content {
+  background-color: cornflowerblue;
+  flex: 9.5;
+}
+
+.footer-wrap {
+  height: 8vh;
+  background-color: coral;
+  display: flex;
+  flex: 12;
+}

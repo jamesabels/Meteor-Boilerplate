@@ -1,26 +1,24 @@
 import React from 'react';
-
-// Import react redux 
-import { createStore, applyMiddleware } from 'redux';
-
-// Import React Redux
-import  { Provider } from 'react-redux';
-
-// Import Reducer 
-import rootReducer from './reducers/root_reducer.jsx';
-
-// Import  Middleware
-import thunk from 'redux-thunk';
-
-const createStoreWithMiddleware = applyMiddleware(thunk)(createStore);
+import  {Provider} from 'react-redux';
 
 
-export default MainLayout = ({content, store}) => (
-  <Provider store={store}>
-    <div>
-        <div className="container">
-          {content}
+export default MainLayout = ({sidebar, content, nav, footer, store}) => (
+    <Provider store={store}>
+        <div className="page-wrap">
+            <div className="nav-wrap">
+                {nav}
+            </div>
+            <div className="content-wrap">
+                <div className="sidebar-wrap">
+                    {sidebar}
+                </div>
+                <div className="content">
+                    {content}
+                </div>
+            </div>
+            <div className="footer-wrap">
+                {footer}
+            </div>
         </div>
-    </div>
-  </Provider>
+    </Provider>
 );

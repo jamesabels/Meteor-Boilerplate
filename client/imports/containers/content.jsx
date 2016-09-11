@@ -1,19 +1,18 @@
 import React from 'react';
 import TrackerReact from 'meteor/ultimatejs:tracker-react';
+import {connect} from 'react-redux';
 
 // Import Actions
 import TestActions from '../actions/test_actions.jsx';
 
-//Import Connect
-import { connect } from 'react-redux';
 
-class Hello extends TrackerReact(React.Component) {
+class Content extends TrackerReact(React.Component) {
     constructor() {
         super();
     }
 
-    componentDidMount () {
-        this.props.getMessage('Hello Meteor');
+    componentDidMount() {
+        this.props.getMessage('Content');
     }
 
     render() {
@@ -25,16 +24,16 @@ class Hello extends TrackerReact(React.Component) {
 
 function mapStateToProps(state) {
     return {
-        message: state.test.message
+        message: state.test.content_message
     }
 }
 
 function mapDispatchToProps(dispatch) {
     return {
         getMessage: function (message) {
-            dispatch(TestActions.SET_MESSAGE(message));
+            dispatch(TestActions.SET_CONTENT_MESSAGE(message));
         }
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Hello);
+export default connect(mapStateToProps, mapDispatchToProps)(Content);
