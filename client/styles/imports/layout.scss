@@ -17,13 +17,13 @@ body {
 }
 
 .nav-wrap {
-  height: 10vh;
+  height: 8vh;
   background-color: teal;
   flex: 1;
 }
 
 .content-wrap {
-  height: 80vh;
+  height: 84vh;
   background-color: pink;
   display: flex;
   flex-direction: row;
@@ -40,7 +40,7 @@ body {
 }
 
 .footer-wrap {
-  height: 10vh;
+  height: 8vh;
   background-color: coral;
   display: flex;
   flex: 12;

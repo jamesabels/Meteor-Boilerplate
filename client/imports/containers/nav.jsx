@@ -12,7 +12,7 @@ class Navigation extends TrackerReact(React.Component) {
     }
 
     componentDidMount() {
-        this.props.getMessage('Navigation');
+        this.props.getMessage('Header');
     }
 
     render() {
