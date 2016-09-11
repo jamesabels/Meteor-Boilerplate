@@ -3,7 +3,7 @@ import {mount} from 'react-mounter'
 import thunk from 'redux-thunk';
 import {createStore, applyMiddleware, compose} from 'redux';
 
-// Import layout
+// Import imports
 import Content from './imports/containers/content.jsx';
 import Navigation from './imports/containers/nav.jsx';
 import Footer from './imports/containers/footer.jsx';
