@@ -11,6 +11,7 @@
     "meteor-node-stubs": "~0.2.0"
   },
   "devDependencies": {
+    "electrify": "^2.1.4",
     "meteor-node-stubs": "^0.2.3",
     "react": "^15.3.1",
     "react-dom": "^15.3.1",
